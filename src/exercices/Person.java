@@ -1,7 +1,48 @@
 package exercices;
 
 public class Person {
+    private String name;
+    private int age;
+    private boolean wilder;
 
+    public Person(String name, int age){ 
+        this.name=name;
+        this.age=age;
+    }
+
+    public void setName(String name)
+      {
+        this.name = name;
+      }
+ 
+      public String getName()
+      {
+        return name;
+      }
+
+      public void setAge(int age)
+      {
+          this.age = age;
+      }
+      public int getAge()
+      {
+          return age;
+      }
+
+      public void setWilder(boolean wilder)
+      {
+          this.wilder = false;
+      }
+      public boolean isWilder()
+      {
+          return true;
+      }
+
+      public String whoAmI(){
+        String resultat =  ("My name is " + getName()+ " and I'm " + getAge());
+        return resultat;
+    }
+    
     // TODO 1. Add the following private attributes :
     // - name (String)
     // - age (int)
